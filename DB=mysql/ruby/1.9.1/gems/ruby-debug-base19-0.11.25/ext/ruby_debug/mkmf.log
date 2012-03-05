@@ -1,0 +1,117 @@
+have_struct_member: checking for rb_method_entry_t.body in method.h... -------------------- no
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
+conftest.c:3:20: error: method.h: Nie ma takiego pliku ani katalogu
+conftest.c:7: error: ‘rb_method_entry_t’ undeclared here (not in a function)
+conftest.c:7: error: expected expression before ‘)’ token
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <method.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((rb_method_entry_t*)0)->body - (char *)0;
+/* end */
+
+--------------------
+
+have_header: checking for vm_core.h... -------------------- no
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+conftest.c:3:21: error: vm_core.h: Nie ma takiego pliku ani katalogu
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_struct_member: checking for rb_method_entry_t.body in method.h... -------------------- no
+
+"gcc -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
+conftest.c:7: error: ‘rb_method_entry_t’ has no member named ‘body’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <method.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((rb_method_entry_t*)0)->body - (char *)0;
+/* end */
+
+--------------------
+
+have_header: checking for vm_core.h... -------------------- yes
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_header: checking for iseq.h... -------------------- yes
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iseq.h>
+/* end */
+
+--------------------
+
+have_header: checking for insns.inc... -------------------- yes
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <insns.inc>
+/* end */
+
+--------------------
+
+have_header: checking for insns_info.inc... -------------------- yes
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <insns_info.inc>
+/* end */
+
+--------------------
+
+have_header: checking for eval_intern.h... -------------------- yes
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <eval_intern.h>
+/* end */
+
+--------------------
+

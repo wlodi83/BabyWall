@@ -1,0 +1,74 @@
+= Message Bus Ruby API
+
+== Installation
+
+  gem install messagebus_ruby_api
+
+== Basic Use
+
+=== Start by requiring MessabusApi:
+
+    require 'messagebus_ruby_api'
+
+=== Then create an instance of the Messagebus class with your account information
+
+    client = MessagebusApi::Messagebus.new("<INSERT_YOUR_API_KEY>")
+
+=== Sending a single message
+
+==== Create Required Parameters
+
+      params = { :toEmail => 'apitest1@messagebus.com',
+        :toName => 'EmailUser',
+        :fromEmail => 'api@messagebus.com',
+        :fromName => 'API',
+        :subject => 'Unit Test Message',
+        :customHeaders => ["sender"=>"apitest1@messagebus.com"],
+        :plaintextBody => 'This message is only a test sent by the Ruby Message Bus client library.',
+        :htmlBody => "<html><body>This message is only a test sent by the Ruby Message Bus client library.</body></html>",
+        :tags => ['RUBY']
+      }
+
+==== Send the message
+
+     client.add_message(params)
+
+== Examples
+
+    The provided examples illustrate how to:
+    - send a single email message in the simplest way
+    - send one or more emails (where the email body is passed with the api call)
+    - send one or more templated emails (where a key referencing a previously stored email body is passed with the api call)
+    - create a mailing list, add and delete mailing list entries and list the existing mailing lists
+    - list recent email unsubscribes
+    - list recent email statistics
+    - list recent delivery errors
+
+== SSL Certificates
+
+    If you encounter SSL certificate problems, use the cacert_info() method to specify a
+    cacert.pem file (remember to specify the full path).
+
+    The curl site has an up to date version of the file:
+
+    http://curl.haxx.se/ca/cacert.pem
+
+== Tests
+  To run the tests, issue the following command from the root of the project:
+  bundle exec rspec spec/messagebus_ruby_api/client_spec.rb
+
+== License
+  Copyright 2012 Mail Bypass, Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+  except in compliance with the License. You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software distributed under the
+  License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+  either express or implied. See the License for the specific language governing permissions
+  and limitations under the License.
+
+== More info
+  Contact Message Bus if you have questions or problems (https://www.messagebus.com/contact)

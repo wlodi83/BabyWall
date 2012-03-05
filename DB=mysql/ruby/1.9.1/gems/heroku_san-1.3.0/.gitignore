@@ -1,0 +1,8 @@
+.bundle
+doc
+pkg
+Thumbs.db
+tmp
+
+Gemfile.lock
+*.swp

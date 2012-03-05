@@ -1,0 +1,128 @@
+package configuration for libffi is not found
+have_header: checking for ffi.h... -------------------- no
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  conftest.c -o conftest.i"
+conftest.c:3:17: error: ffi.h: Nie ma takiego pliku ani katalogu
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+find_header: checking for ffi.h in /usr/local/include... -------------------- no
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  conftest.c -o conftest.i"
+conftest.c:3:17: error: ffi.h: Nie ma takiego pliku ani katalogu
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+"gcc -E -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I/usr/local/include conftest.c -o conftest.i"
+conftest.c:3:17: error: ffi.h: Nie ma takiego pliku ani katalogu
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ruby_thread_has_gvl_p()... -------------------- yes
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ruby_thread_has_gvl_p’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ruby_thread_has_gvl_p; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ruby_thread_has_gvl_p(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ruby_native_thread_p()... -------------------- yes
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ruby_native_thread_p; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I. -I/home/tvserienonline/www/.rvm/usr/include  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC conftest.c  -L. -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/usr/lib -Wl,-R/home/tvserienonline/www/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/tvserienonline/www/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { rb_thread_call_with_gvl(); return 0; }
+/* end */
+
+--------------------
+
